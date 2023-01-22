@@ -5,9 +5,15 @@ import { Component, OnInit } from '@angular/core';
   template: `
     <div class="app">
       <h1 (click)="handleClick($event)">
-        {{ newMessage }}
+        {{ message }}
       </h1>
-      <input [value]="message" type="text" (input)="handleInput($event)" />
+      <input
+        [value]="message"
+        type="text"
+        (input)="newMessage = messageInput.value"
+        #messageInput
+      />
+      <p>{{ messageInput.value }}</p>
     </div>
   `,
   styles: [
@@ -29,14 +35,10 @@ export class AppComponent implements OnInit {
 
   ngOnInit() {
     this.message = 'Hello Angular!';
+    this.newMessage = this.message;
   }
 
   handleClick(event: Event) {
     console.log(event);
-  }
-
-  handleInput(event: Event) {
-    const { value } = event.target as HTMLInputElement;
-    this.newMessage = value;
   }
 }
