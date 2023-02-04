@@ -1,19 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   template: `
     <div class="app">
-      <h1 (click)="handleClick($event)">
-        {{ message }}
-      </h1>
-      <input
-        [value]="message"
-        type="text"
-        (input)="newMessage = messageInput.value"
-        #messageInput
-      />
-      <p>{{ messageInput.value }}</p>
+      <app-donut-list></app-donut-list>
     </div>
   `,
   styles: [
@@ -27,18 +18,6 @@ import { Component, OnInit } from '@angular/core';
     `,
   ],
 })
-export class AppComponent implements OnInit {
-  message!: string;
-  newMessage!: string;
-
+export class AppComponent {
   constructor() {}
-
-  ngOnInit() {
-    this.message = 'Hello Angular!';
-    this.newMessage = this.message;
-  }
-
-  handleClick(event: Event) {
-    console.log(event);
-  }
 }

@@ -10,3 +10,11 @@ commit: [Component Architecture]: Create child feature module
             => declare any component that is used in the module
             => imports CommonModule, whic contains the angular features and directives
     
+commit: [Component Architecture]: Create a smart container component
+    - hot to generate a new component:
+        npx ng g component admin/containers/donut-list --dry-run
+            => admin/containers/donut-list: the path for the new component files.
+            => --dry-run: show what the command will do but doesnot make any changes.
+               have to run the command again without this flag so the component
+               is really generated.
+    - need to export the DonutListComponent from the AdminModule
