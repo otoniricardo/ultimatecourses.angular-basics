@@ -55,3 +55,9 @@ commit: [Styles and CSS encapsulation]: Set inline styles with style bindings
     switch classes
     - how to apply conditionals styles using [style.*]:
         [style.border]="donut.promo ? '2px solid #eee' : 'none'"
+
+commit: [Styles and CSS encapsulation]: Complex inline styles with NgStyle
+    - [ngStyle] is more powerfull than [style];
+    - should be used instead of [style] when is needed to bind more than like 
+    2 styles;
+    - accepts a function to get an styles object;
