@@ -49,3 +49,9 @@ commit: [Styles and CSS encapsulation]: Scoped styles in components
 
 commit: [Styles and CSS encapsulation]: View encapsulation: shadown DOM and emulated
     - ViewEncapsulation.Emulated is the default behaviour;
+
+commit: [Styles and CSS encapsulation]: Set inline styles with style bindings
+    - the idea behind inline styles is to switch styles without the need of
+    switch classes
+    - how to apply conditionals styles using [style.*]:
+        [style.border]="donut.promo ? '2px solid #eee' : 'none'"
