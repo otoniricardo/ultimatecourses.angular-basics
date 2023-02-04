@@ -79,3 +79,6 @@ commit: [Rendering flows]: Use NgIf for conditional Rendering
 
 commit: [Rendering flows]: Use <ng-container> for virtual elements
     - ng-container is shown as a comment in DOM for debugging purposes;
+
+commit: [Rendering flows]: Use the NgIf, else and then syntax
+    - 
