@@ -41,3 +41,7 @@ commit: [Component Architecture]: Create and render a dumb component
 commit: [Component Architecture]: Pass state to dumb components via @Input
     - the srmart component is responsible for data fetching and delegating
     to the dumb component
+
+commit: [Styles and CSS encapsulation]: Scoped styles in components
+    - the property inlineStyleLanguage: scss in angular.json allows styles
+    compositions like hover inside .donut-card styles in DonutCardComponent
