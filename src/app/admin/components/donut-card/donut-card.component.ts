@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Donut } from '../../models/donut.model';
 
 @Component({
   selector: 'app-donut-card',
@@ -17,4 +18,8 @@ import { Component } from '@angular/core';
   `,
   styles: [],
 })
-export class DonutCardComponent {}
+export class DonutCardComponent {
+  @Input() donut!: Donut;
+
+  constructor() {}
+}

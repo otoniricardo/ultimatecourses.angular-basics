@@ -5,14 +5,15 @@ import { Donut } from '../../models/donut.model';
   selector: 'app-donut-list',
   template: `
     <div>
-      <app-donut-card></app-donut-card>
+      <app-donut-card [donut]="donuts[0]"></app-donut-card>
+      <app-donut-card [donut]="donuts[1]"></app-donut-card>
+      <app-donut-card [donut]="donuts[2]"></app-donut-card>
     </div>
   `,
   styles: [],
 })
 export class DonutListComponent implements OnInit {
   donuts!: Donut[];
-  donut!: Donut;
 
   constructor() {}
 
@@ -40,6 +41,5 @@ export class DonutListComponent implements OnInit {
         description: 'Chocolate drizzled with caramel',
       },
     ];
-    this.donut = this.donuts[0];
   }
 }
