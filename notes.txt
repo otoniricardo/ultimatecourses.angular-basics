@@ -73,3 +73,6 @@ commit: [Styles and CSS encapsulation]: Complex classes with NgClass
 commit: [Pipes]: Use a pipe to format a currency
     - angular has alot of built in pipes;
     - a pipe is just a function;
+
+commit: [Rendering flows]: Use NgIf for conditional Rendering
+    - 
