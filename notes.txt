@@ -95,4 +95,7 @@ commit: [Rendering flows]: Improve NgFor Performace with TrackBy
     - overriding the trackBy function improves performace of rendering a list
     multiple times, by default it uses object identity, and if we use
     a immutable state everytime the object identity will be different, so we
-    change the default behaviour to track for the item id. 
+    change the default behaviour to track for the item id.
+
+commit: [Rendering flows]: Access NgFor index, Odd and Even variables
+    - 
