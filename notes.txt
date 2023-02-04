@@ -69,3 +69,7 @@ commit: [Styles and CSS encapsulation]: Set classes with class bindings
 
 commit: [Styles and CSS encapsulation]: Complex classes with NgClass
     - should be used instead of [class] when applying 2 or more classes;
+
+commit: [Pipes]: Use a pipe to format a currency
+    - angular has alot of built in pipes;
+    - a pipe is just a function;
