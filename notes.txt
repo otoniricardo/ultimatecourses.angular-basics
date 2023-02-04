@@ -18,3 +18,8 @@ commit: [Component Architecture]: Create a smart container component
                have to run the command again without this flag so the component
                is really generated.
     - need to export the DonutListComponent from the AdminModule
+
+commit: [Component Architecture]: Use the NgOnInit lifecycle Hook
+    - use the ngOnInit func to initiate not static data(data that gets fetched);
+    - use the | json in the template: {{ donut | json }} in template does the 
+    same as JSON.stringfy(donut) in the .ts and {{ donut }} in template;
