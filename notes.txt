@@ -105,3 +105,6 @@ commit: [Rendering flows]: Advanced NgFor syntax with <ng-template>
 
 commit: [Rendering flows]: Use NgSwitch case rendering
     - 
+
+commit: [Rendering flows]: Advanced NgSwitch syntax with <ng-template>
+    - 
