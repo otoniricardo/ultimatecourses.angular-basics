@@ -1,5 +1,5 @@
 export interface Donut {
-  id: number;
+  id: string;
   name: string;
   icon: string;
   price: number;

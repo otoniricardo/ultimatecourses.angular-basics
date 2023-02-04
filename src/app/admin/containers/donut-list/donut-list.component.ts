@@ -7,7 +7,7 @@ import { Donut } from '../../models/donut.model';
     <div>
       <ng-container *ngIf="donuts.length; else nothing">
         <app-donut-card
-          *ngFor="let donut of donuts"
+          *ngFor="let donut of donuts; trackBy: trackById"
           [donut]="donut"
         ></app-donut-card>
       </ng-container>
@@ -27,14 +27,14 @@ export class DonutListComponent implements OnInit {
   ngOnInit(): void {
     this.donuts = [
       {
-        id: 1,
+        id: 'a1b',
         name: 'Just chocolate',
         icon: 'just-chocolate',
         price: 119,
         description: 'For the pure chocolate',
       },
       {
-        id: 2,
+        id: 'b2c',
         name: 'Glazed fudge',
         icon: 'glazed-fudge',
         price: 129,
@@ -42,12 +42,16 @@ export class DonutListComponent implements OnInit {
         promo: true,
       },
       {
-        id: 3,
+        id: 'c3d',
         name: 'Caramel swirl',
         icon: 'caramel-swirl',
         price: 129,
         description: 'Chocolate drizzled with caramel',
       },
     ];
+  }
+
+  trackById(index: number, item: Donut) {
+    return item.id;
   }
 }
