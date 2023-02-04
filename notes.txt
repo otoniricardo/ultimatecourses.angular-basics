@@ -66,3 +66,6 @@ commit: [Styles and CSS encapsulation]: Set classes with class bindings
     - woks like inline [style] but with the advantage of not applying an
     empty class on false condition;
     - can be used multiple times;
+
+commit: [Styles and CSS encapsulation]: Complex classes with NgClass
+    - should be used instead of [class] when applying 2 or more classes;
