@@ -76,3 +76,6 @@ commit: [Pipes]: Use a pipe to format a currency
 
 commit: [Rendering flows]: Use NgIf for conditional Rendering
     - 
+
+commit: [Rendering flows]: Use <ng-container> for virtual elements
+    - ng-container is shown as a comment in DOM for debugging purposes;
