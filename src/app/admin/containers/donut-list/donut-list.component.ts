@@ -5,10 +5,7 @@ import { Donut } from '../../models/donut.model';
   selector: 'app-donut-list',
   template: `
     <div>
-      <div>
-        {{ donut.name }}
-        {{ donut.price }}
-      </div>
+      <app-donut-card></app-donut-card>
     </div>
   `,
   styles: [],
@@ -31,7 +28,7 @@ export class DonutListComponent implements OnInit {
       {
         id: 2,
         name: 'Glazed fudge',
-        icon: 'glazed-fusge',
+        icon: 'glazed-fudge',
         price: 129,
         description: 'Sticky perfection',
       },
