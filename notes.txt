@@ -46,3 +46,6 @@ commit: [Styles and CSS encapsulation]: Scoped styles in components
     - the property inlineStyleLanguage: scss in angular.json allows styles
     compositions like hover inside .donut-card styles in DonutCardComponent;
     -  how to use the :host {} to style a component;
+
+commit: [Styles and CSS encapsulation]: View encapsulation: shadown DOM and emulated
+    - ViewEncapsulation.Emulated is the default behaviour;
