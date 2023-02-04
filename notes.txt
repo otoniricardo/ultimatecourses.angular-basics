@@ -99,3 +99,6 @@ commit: [Rendering flows]: Improve NgFor Performace with TrackBy
 
 commit: [Rendering flows]: Access NgFor index, Odd and Even variables
     - 
+
+commit: [Rendering flows]: Advanced NgFor syntax with <ng-template>
+    - 
