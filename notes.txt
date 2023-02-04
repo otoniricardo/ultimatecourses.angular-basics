@@ -82,3 +82,8 @@ commit: [Rendering flows]: Use <ng-container> for virtual elements
 
 commit: [Rendering flows]: Use the NgIf, else and then syntax
     - 
+
+commit: [Rendering flows]: NgIf syntax with <ng-template>
+    - *ngIf creates a template and does the condittion check, so the code
+    <ng-container *ngIf="isTrue"> can be replaced by <ng-template [ngIf]="isTrue"
+    - so the * is a short hand to a <ng-template> and the property binding;
