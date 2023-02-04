@@ -61,3 +61,8 @@ commit: [Styles and CSS encapsulation]: Complex inline styles with NgStyle
     - should be used instead of [style] when is needed to bind more than like 
     2 styles;
     - accepts a function to get an styles object;
+
+commit: [Styles and CSS encapsulation]: Set classes with class bindings
+    - woks like inline [style] but with the advantage of not applying an
+    empty class on false condition;
+    - can be used multiple times;
