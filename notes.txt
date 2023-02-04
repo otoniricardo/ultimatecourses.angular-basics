@@ -1,0 +1,12 @@
+commit: [Component Architecture]: Create child feature module
+    - how to create a new module using the cli: 
+        npx ng g admin --module=app.module
+            => npx ng: use angular cli.
+            => g: short for generate.
+            => admin: module name.
+            => --module=app.module: make new module auto import in app module.
+    - about the generated module file:
+        @NgModule() decorator:
+            => declare any component that is used in the module
+            => imports CommonModule, whic contains the angular features and directives
+    
