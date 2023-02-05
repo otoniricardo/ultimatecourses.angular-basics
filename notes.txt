@@ -150,3 +150,8 @@ commit: [Template Forms and validation]: Disable Submit and Safety Check Submiss
 
 commit: [Template Forms and validation]: Trigger Validation Messages On Submit
     - 
+
+commit: [Template Forms and validation]: Control NgModel Writes with ngModelOptions
+    - NgModelOptions property standalone can detach an input fromthe form;
+    - updateOn can change the event that updates the input value, default is change
+    but blur or submit can improve performace;

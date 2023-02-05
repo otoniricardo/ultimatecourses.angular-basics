@@ -14,6 +14,7 @@ import { NgForm } from '@angular/forms';
           required
           minlength="5"
           ngModel
+          [ngModelOptions]="{ updateOn: 'blur' }"
           #name="ngModel"
         />
         <ng-container *ngIf="name.invalid && name.touched">
@@ -33,6 +34,7 @@ import { NgForm } from '@angular/forms';
           class="input input--select"
           required
           ngModel
+          [ngModelOptions]="{ updateOn: 'blur' }"
           #icon="ngModel"
         >
           <option *ngFor="let icon of icons" [ngValue]="icon">
@@ -54,6 +56,7 @@ import { NgForm } from '@angular/forms';
           class="input"
           required
           ngModel
+          [ngModelOptions]="{ updateOn: 'blur' }"
           #price="ngModel"
         />
         <ng-container *ngIf="price.invalid && price.touched">
@@ -86,6 +89,7 @@ import { NgForm } from '@angular/forms';
           class="input input--textarea"
           required
           ngModel
+          [ngModelOptions]="{ updateOn: 'blur' }"
           #description="ngModel"
         ></textarea>
         <ng-container *ngIf="description.invalid && description.touched">
