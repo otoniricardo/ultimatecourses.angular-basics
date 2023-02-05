@@ -1,11 +1,26 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { DonutListComponent } from './containers/donut-list/donut-list.component';
-import { DonutCardComponent } from './components/donut-card/donut-card.component';
 
+//containers
+import { DonutListComponent } from './containers/donut-list/donut-list.component';
+import { DonutSingleComponent } from './containers/donut-single/donut-single.component';
+// components
+import { DonutCardComponent } from './components/donut-card/donut-card.component';
+import { DonutFormComponent } from './components/donut-form/donut-form.component';
+
+// services
+
+//guards
+
+//directives
 @NgModule({
-  declarations: [DonutListComponent, DonutCardComponent],
+  declarations: [
+    DonutListComponent,
+    DonutSingleComponent,
+    DonutCardComponent,
+    DonutFormComponent,
+  ],
   imports: [CommonModule],
-  exports: [DonutListComponent],
+  exports: [DonutListComponent, DonutSingleComponent],
 })
 export class AdminModule {}
