@@ -167,3 +167,6 @@ commit: [Template Forms and validation]: Emit Form Payload to Smart Container vi
 
 commit: [Template Forms and validation]: One-Way Data Binding to NgModel
     - one way data flow is a good habit;
+
+commit: [State Management and Services]: Create an @Injectable Service
+    - npx ng g service admin/services/donut;
