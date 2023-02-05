@@ -141,3 +141,6 @@ commit: [Template Forms and validation]: Show Error Messages on Validation Chang
 
 commit: [Template Forms and validation]: Style Invalid Input Fields Globally
     - already applied on styles.scss: //  Angular Related Styles
+
+commit: [Template Forms and validation]: Form Submit with NgSubmit
+    - 
