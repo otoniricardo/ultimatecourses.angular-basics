@@ -170,3 +170,6 @@ commit: [Template Forms and validation]: One-Way Data Binding to NgModel
 
 commit: [State Management and Services]: Create an @Injectable Service
     - npx ng g service admin/services/donut;
+
+commit: [State Management and Services]: Share State in Components via Services
+    - use the constructor to wire things up and ngOnInit for initialization;
