@@ -127,3 +127,8 @@ commit: [Template Forms and validation]: <select> and <option> Rendering and Bin
 
 commit: [Template Forms and validation]: Textarea Binding with NgModel
     - 
+
+commit: [Template Forms and validation]: Add validation constraints and form status
+    - form.form.status changes from invalid to valid after the required
+    inputs are filled up;
+    
