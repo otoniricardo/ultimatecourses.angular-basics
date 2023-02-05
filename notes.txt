@@ -118,3 +118,6 @@ commit: [Template Forms and validation]: Use NgForm with a template Ref variable
 
 commit: [Template Forms and validation]: <input> binding with NgModel
     -  
+
+commit: [Template Forms and validation]: Radio Button binding with NgModel
+    -  
