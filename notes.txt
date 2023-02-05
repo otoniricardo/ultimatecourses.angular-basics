@@ -115,3 +115,6 @@ commit: [Template Forms and validation]: Create a form container and dumb compon
 
 commit: [Template Forms and validation]: Use NgForm with a template Ref variables
     - 
+
+commit: [Template Forms and validation]: <input> binding with NgModel
+    -  
