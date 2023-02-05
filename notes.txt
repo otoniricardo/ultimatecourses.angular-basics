@@ -161,3 +161,6 @@ commit: [Template Forms and validation]: Trigger a Form State and Validation Res
 
 commit: [Template Forms and validation]: Show Visual Feedback on Form Submission
     - 
+
+commit: [Template Forms and validation]: Emit Form Payload to Smart Container via @Output
+    - 
