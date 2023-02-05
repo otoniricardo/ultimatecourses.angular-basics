@@ -164,3 +164,6 @@ commit: [Template Forms and validation]: Show Visual Feedback on Form Submission
 
 commit: [Template Forms and validation]: Emit Form Payload to Smart Container via @Output
     - 
+
+commit: [Template Forms and validation]: One-Way Data Binding to NgModel
+    - one way data flow is a good habit;
