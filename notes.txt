@@ -131,4 +131,7 @@ commit: [Template Forms and validation]: Textarea Binding with NgModel
 commit: [Template Forms and validation]: Add validation constraints and form status
     - form.form.status changes from invalid to valid after the required
     inputs are filled up;
-    
+
+commit: [Template Forms and validation]: NgModel Template Refs and Validation States
+    - for the form to be valid each input must also be valid;
+    - learn how to export the ngModel as a template reference variable;
