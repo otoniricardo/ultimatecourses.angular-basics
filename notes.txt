@@ -124,3 +124,6 @@ commit: [Template Forms and validation]: Radio Button binding with NgModel
 
 commit: [Template Forms and validation]: <select> and <option> Rendering and Binding
     - is better to use [ngValue] for property binding in select option
+
+commit: [Template Forms and validation]: Textarea Binding with NgModel
+    - 
