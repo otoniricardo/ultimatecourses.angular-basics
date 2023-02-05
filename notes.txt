@@ -173,3 +173,6 @@ commit: [State Management and Services]: Create an @Injectable Service
 
 commit: [State Management and Services]: Share State in Components via Services
     - use the constructor to wire things up and ngOnInit for initialization;
+
+commit: [State Management and Services]: Class Methods as State Selectors
+    - 
