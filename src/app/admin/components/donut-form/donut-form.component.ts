@@ -2,7 +2,11 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-donut-form',
-  template: ` <p>donut-form works!</p> `,
+  template: `
+    <form class="donut-form" #form="ngForm">
+      <pre> {{ form.value | json }} </pre>
+    </form>
+  `,
   styles: [],
 })
 export class DonutFormComponent {

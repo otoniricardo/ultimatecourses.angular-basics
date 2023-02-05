@@ -112,3 +112,6 @@ commit: [Rendering flows]: Advanced NgSwitch syntax with <ng-template>
 commit: [Template Forms and validation]: Create a form container and dumb component
     - npx ng g component admin/containers/donut-single
     - npx ng g component admin/components/donut-form
+
+commit: [Template Forms and validation]: Use NgForm with a template Ref variables
+    - 

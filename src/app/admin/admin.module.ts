@@ -7,6 +7,7 @@ import { DonutSingleComponent } from './containers/donut-single/donut-single.com
 // components
 import { DonutCardComponent } from './components/donut-card/donut-card.component';
 import { DonutFormComponent } from './components/donut-form/donut-form.component';
+import { FormsModule } from '@angular/forms';
 
 // services
 
@@ -20,7 +21,7 @@ import { DonutFormComponent } from './components/donut-form/donut-form.component
     DonutCardComponent,
     DonutFormComponent,
   ],
-  imports: [CommonModule],
+  imports: [CommonModule, FormsModule],
   exports: [DonutListComponent, DonutSingleComponent],
 })
 export class AdminModule {}
