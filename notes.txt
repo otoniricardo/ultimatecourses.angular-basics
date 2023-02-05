@@ -144,3 +144,5 @@ commit: [Template Forms and validation]: Style Invalid Input Fields Globally
 
 commit: [Template Forms and validation]: Form Submit with NgSubmit
     - 
+
+commit: [Template Forms and validation]: Disable Submit and Safety Check Submissions
