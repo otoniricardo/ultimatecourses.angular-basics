@@ -135,3 +135,6 @@ commit: [Template Forms and validation]: Add validation constraints and form sta
 commit: [Template Forms and validation]: NgModel Template Refs and Validation States
     - for the form to be valid each input must also be valid;
     - learn how to export the ngModel as a template reference variable;
+
+commit: [Template Forms and validation]: Show Error Messages on Validation Change
+    - 
