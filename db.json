@@ -9,12 +9,12 @@
       "promo": "new"
     },
     {
-      "id": "2",
       "name": "Glazed fudge",
       "icon": "glazed-fudge",
-      "price": 129,
+      "price": 1290,
+      "promo": "new",
       "description": "Sticky perfection",
-      "promo": "limited"
+      "id": "2"
     },
     {
       "id": "3",

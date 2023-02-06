@@ -200,3 +200,6 @@ commit: [Services and API Requests]: Branch off an Observable to Access State
 
 commit: [Services and API Requests]: Create Data with HttpClient POST
     - 
+
+commit: [Services and API Requests]: Update Data with HttpClient PUT
+    - 
