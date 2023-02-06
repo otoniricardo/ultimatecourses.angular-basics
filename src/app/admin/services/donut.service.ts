@@ -7,7 +7,7 @@ import { Donut } from '../models/donut.model';
 export class DonutService {
   private donuts: Donut[] = [
     {
-      id: 'a1b',
+      id: '1',
       name: 'Just chocolate',
       icon: 'just-chocolate',
       price: 119,
@@ -15,7 +15,7 @@ export class DonutService {
       promo: 'new',
     },
     {
-      id: 'b2c',
+      id: '2',
       name: 'Glazed fudge',
       icon: 'glazed-fudge',
       price: 129,
@@ -23,21 +23,21 @@ export class DonutService {
       promo: 'limited',
     },
     {
-      id: 'c3d',
+      id: '3',
       name: 'Caramel swirl',
       icon: 'caramel-swirl',
       price: 129,
       description: 'Chocolate drizzled with caramel',
     },
     {
-      id: 'd4e',
+      id: '4',
       name: 'Sour supreme',
       icon: 'sour-supreme',
       price: 139,
       description: 'For the sour advocate',
     },
     {
-      id: 'e5f',
+      id: '5',
       name: 'Zesty lemon',
       icon: 'zesty-lemon',
       price: 149,
@@ -57,5 +57,13 @@ export class DonutService {
 
   create(payload: Donut) {
     this.donuts = [...this.donuts, payload];
+  }
+
+  update(payload: Donut) {
+    this.donuts = this.donuts.map((donut) => {
+      if (donut.id !== payload.id) return donut;
+      return payload;
+    });
+    console.log(this.donuts);
   }
 }

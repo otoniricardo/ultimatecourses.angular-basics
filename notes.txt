@@ -179,3 +179,6 @@ commit: [State Management and Services]: Class Methods as State Selectors
 
 commit: [State Management and Services]: Immutable State Creation
     - 
+
+commit: [State Management and Services]: Immutable State Updates
+    - 
