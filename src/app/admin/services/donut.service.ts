@@ -64,6 +64,9 @@ export class DonutService {
       if (donut.id !== payload.id) return donut;
       return payload;
     });
-    console.log(this.donuts);
+  }
+
+  delete(payload: Donut) {
+    this.donuts = this.donuts.filter((donut) => donut.id !== payload.id);
   }
 }

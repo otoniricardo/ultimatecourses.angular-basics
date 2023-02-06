@@ -182,3 +182,6 @@ commit: [State Management and Services]: Immutable State Creation
 
 commit: [State Management and Services]: Immutable State Updates
     - 
+
+commit: [State Management and Services]: Immutable State Deletions
+    - 
