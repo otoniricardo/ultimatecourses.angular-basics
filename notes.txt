@@ -176,3 +176,6 @@ commit: [State Management and Services]: Share State in Components via Services
 
 commit: [State Management and Services]: Class Methods as State Selectors
     - 
+
+commit: [State Management and Services]: Immutable State Creation
+    - 

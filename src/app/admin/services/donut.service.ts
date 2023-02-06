@@ -54,4 +54,8 @@ export class DonutService {
     const donut = this.read().find((donut) => donut.id === id);
     return donut ? donut : { name: '', description: '', icon: '', price: 0 };
   }
+
+  create(payload: Donut) {
+    this.donuts = [...this.donuts, payload];
+  }
 }

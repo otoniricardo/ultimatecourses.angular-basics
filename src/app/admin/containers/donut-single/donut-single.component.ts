@@ -20,11 +20,11 @@ export class DonutSingleComponent implements OnInit {
   constructor(private donutService: DonutService) {}
 
   ngOnInit(): void {
-    const id = 'b2c';
+    const id = 'xxx';
     this.donut = this.donutService.readOne(id);
   }
 
   onCreate(donut: Donut) {
-    console.log('onCreate', donut);
+    this.donutService.create(donut);
   }
 }
