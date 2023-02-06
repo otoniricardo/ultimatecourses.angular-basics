@@ -188,3 +188,6 @@ commit: [State Management and Services]: Immutable State Deletions
 
 commit: [Services and API Requests]: Configure and Proxy a Local HTTP Server
     - 
+
+commit: [Services and API Requests]: Read Data with HttpClient GET
+    - 
