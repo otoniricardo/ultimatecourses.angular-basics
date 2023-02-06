@@ -17,13 +17,15 @@ import { DonutService } from '../../services/donut.service';
   styles: [],
 })
 export class DonutSingleComponent implements OnInit {
-  donut!: Donut;
+  donut?: Donut;
 
   constructor(private donutService: DonutService) {}
 
   ngOnInit(): void {
     const id = '2';
-    // this.donut = this.donutService.readOne(id);
+    this.donutService
+      .readOne(id)
+      .subscribe((donut: Donut) => (this.donut = donut));
   }
 
   onCreate(donut: Donut) {

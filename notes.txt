@@ -194,3 +194,6 @@ commit: [Services and API Requests]: Read Data with HttpClient GET
 
 commit: [Services and API Requests]: Store State with Observable Pipes
     - 
+
+commit: [Services and API Requests]: Branch off an Observable to Access State
+    - 
