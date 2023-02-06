@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 
-import { map, of, tap } from 'rxjs';
+import { catchError, map, of, tap, throwError } from 'rxjs';
 
 import { Donut } from '../models/donut.model';
 
@@ -20,7 +20,8 @@ export class DonutService {
     return this.http.get<Donut[]>(`/api/donuts`).pipe(
       tap((donuts) => {
         this.donuts = donuts;
-      })
+      }),
+      catchError(this.handleError)
     );
   }
 
@@ -31,7 +32,8 @@ export class DonutService {
         return donut
           ? donut
           : { name: '', description: '', icon: '', price: 0 };
-      })
+      }),
+      catchError(this.handleError)
     );
   }
 
@@ -39,7 +41,8 @@ export class DonutService {
     return this.http.post<Donut>(`/api/donuts`, payload).pipe(
       tap((donut) => {
         this.donuts = [...this.donuts, donut];
-      })
+      }),
+      catchError(this.handleError)
     );
   }
 
@@ -50,7 +53,8 @@ export class DonutService {
           if (item.id !== donut.id) return donut;
           return donut;
         });
-      })
+      }),
+      catchError(this.handleError)
     );
   }
 
@@ -58,7 +62,19 @@ export class DonutService {
     return this.http.delete(`/api/donuts/${payload.id}`).pipe(
       tap(() => {
         this.donuts = this.donuts.filter((donut) => donut.id !== payload.id);
-      })
+      }),
+      catchError(this.handleError)
     );
+  }
+
+  private handleError(err: HttpErrorResponse) {
+    if (err.error instanceof ErrorEvent) {
+      // client side
+      console.warn('Client', err.message);
+    } else {
+      // server side
+      console.warn('Server', err.status);
+    }
+    return throwError(() => new Error(err.message));
   }
 }

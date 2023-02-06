@@ -206,3 +206,6 @@ commit: [Services and API Requests]: Update Data with HttpClient PUT
 
 commit: [Services and API Requests]: Delete Data with HttpClient DELETE
     - 
+
+commit: [Services and API Requests]: Error Handling with catchError() and throwError
+    - 
