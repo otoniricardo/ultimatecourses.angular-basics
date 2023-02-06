@@ -233,3 +233,6 @@ commit: [Routing and Navigation]: Handle 404 Not Found Routes with Wildcards
 
 commit: [Routing and Navigation]: Lazy-Loading Feature Modules
     - 
+
+commit: [Routing and Navigation]: Declarative Navigation with routerLink Directi
+    - 

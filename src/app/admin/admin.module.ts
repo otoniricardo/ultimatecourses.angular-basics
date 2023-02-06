@@ -22,7 +22,7 @@ export const routes: Routes = [
     component: DonutListComponent,
   },
   {
-    path: 'donut',
+    path: 'donuts/new',
     component: DonutSingleComponent,
   },
   {
