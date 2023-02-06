@@ -14,7 +14,7 @@ import { Donut } from '../../models/donut.model';
           class="input"
           required
           minlength="5"
-          [ngModel]="donut?.name"
+          [ngModel]="donut.name"
           #name="ngModel"
         />
         <ng-container *ngIf="name.invalid && name.touched">
@@ -33,7 +33,7 @@ import { Donut } from '../../models/donut.model';
           name="icon"
           class="input input--select"
           required
-          [ngModel]="donut?.icon"
+          [ngModel]="donut.icon"
           #icon="ngModel"
         >
           <option *ngFor="let icon of icons" [ngValue]="icon">
@@ -54,7 +54,7 @@ import { Donut } from '../../models/donut.model';
           name="price"
           class="input"
           required
-          [ngModel]="donut?.price"
+          [ngModel]="donut.price"
           #price="ngModel"
         />
         <ng-container *ngIf="price.invalid && price.touched">
@@ -71,7 +71,7 @@ import { Donut } from '../../models/donut.model';
             type="radio"
             name="promo"
             [value]="undefined"
-            [ngModel]="donut?.promo"
+            [ngModel]="donut.promo"
           />
           <span>None</span>
         </label>
@@ -80,7 +80,7 @@ import { Donut } from '../../models/donut.model';
             type="radio"
             name="promo"
             value="new"
-            [ngModel]="donut?.promo"
+            [ngModel]="donut.promo"
           />
           <span>NEW</span>
         </label>
@@ -89,7 +89,7 @@ import { Donut } from '../../models/donut.model';
             type="radio"
             name="promo"
             value="limited"
-            [ngModel]="donut?.promo"
+            [ngModel]="donut.promo"
           />
           <span>LIMITED</span>
         </label>
@@ -101,7 +101,7 @@ import { Donut } from '../../models/donut.model';
           name="description"
           class="input input--textarea"
           required
-          [ngModel]="donut?.description"
+          [ngModel]="donut.description"
           #description="ngModel"
         ></textarea>
         <ng-container *ngIf="description.invalid && description.touched">

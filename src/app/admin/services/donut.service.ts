@@ -36,7 +36,11 @@ export class DonutService {
   }
 
   create(payload: Donut) {
-    this.donuts = [...this.donuts, payload];
+    return this.http.post<Donut>(`/api/donuts`, payload).pipe(
+      tap((donut) => {
+        this.donuts = [...this.donuts, donut];
+      })
+    );
   }
 
   update(payload: Donut) {
