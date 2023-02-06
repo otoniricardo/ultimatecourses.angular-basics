@@ -224,3 +224,6 @@ commit: [Routing and Navigation]: Root Module Routes with forRoot()
 
 commit: [Routing and Navigation]: Create Nested Child Routes
     - 
+
+commit: [Routing and Navigation]: Redirect Routes to New Paths
+    - 
