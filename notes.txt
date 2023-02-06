@@ -203,3 +203,6 @@ commit: [Services and API Requests]: Create Data with HttpClient POST
 
 commit: [Services and API Requests]: Update Data with HttpClient PUT
     - 
+
+commit: [Services and API Requests]: Delete Data with HttpClient DELETE
+    - 
