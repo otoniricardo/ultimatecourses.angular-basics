@@ -215,3 +215,6 @@ commit: [Services and API Requests]: Retry Failed Requests with retry()
 
 commit: [Services and API Requests]: Use retryWhen() to Delay Retries
     - 
+
+commit: [Services and API Requests]: Set HttpHeaders and RequestOptions
+    - 
