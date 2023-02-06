@@ -212,3 +212,6 @@ commit: [Services and API Requests]: Error Handling with catchError() and throwE
 
 commit: [Services and API Requests]: Retry Failed Requests with retry()
     - 
+
+commit: [Services and API Requests]: Use retryWhen() to Delay Retries
+    - 
