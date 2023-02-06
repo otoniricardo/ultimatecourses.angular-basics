@@ -236,3 +236,6 @@ commit: [Routing and Navigation]: Lazy-Loading Feature Modules
 
 commit: [Routing and Navigation]: Declarative Navigation with routerLink Directi
     - 
+
+commit: [Routing and Navigation]: Dynamic Route Params and ActivatedRoute
+    - 

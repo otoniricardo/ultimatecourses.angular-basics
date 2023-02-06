@@ -31,11 +31,12 @@
       "description": "For the sour advocate"
     },
     {
-      "id": "5",
       "name": "Zesty lemon",
       "icon": "zesty-lemon",
-      "price": 149,
-      "description": "Delicious lucious lemon"
+      "price": 119,
+      "promo": "new",
+      "description": "Delicious lucious lemon.",
+      "id": "5"
     }
   ]
 }

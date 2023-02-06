@@ -50,7 +50,7 @@ export class DonutService {
     );
   }
 
-  readOne(id: string) {
+  readOne(id: string | null) {
     return this.read().pipe(
       map((donuts) => {
         const donut = donuts.find((donut) => donut.id === id);
@@ -75,7 +75,7 @@ export class DonutService {
     return this.http.put<Donut>(`/api/donuts/${payload.id}`, payload).pipe(
       tap((donut) => {
         this.donuts = this.donuts.map((item) => {
-          if (item.id !== donut.id) return donut;
+          if (item.id !== donut.id) return item;
           return donut;
         });
       }),
