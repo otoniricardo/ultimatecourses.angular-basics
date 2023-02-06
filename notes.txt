@@ -218,3 +218,6 @@ commit: [Services and API Requests]: Use retryWhen() to Delay Retries
 
 commit: [Services and API Requests]: Set HttpHeaders and RequestOptions
     - 
+
+commit: [Routing and Navigation]: Root Module Routes with forRoot()
+    - 
