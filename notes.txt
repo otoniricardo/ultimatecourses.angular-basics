@@ -191,3 +191,6 @@ commit: [Services and API Requests]: Configure and Proxy a Local HTTP Server
 
 commit: [Services and API Requests]: Read Data with HttpClient GET
     - 
+
+commit: [Services and API Requests]: Store State with Observable Pipes
+    - 
