@@ -16,7 +16,7 @@ import { DonutFormComponent } from './components/donut-form/donut-form.component
 
 // directives
 
-export const routes: Routes = [
+export const AdminRoutes: Routes = [
   {
     path: 'donuts',
     component: DonutListComponent,
@@ -37,13 +37,13 @@ export const routes: Routes = [
     redirectTo: 'donuts',
   },
 ];
-@NgModule({
-  declarations: [
-    DonutListComponent,
-    DonutSingleComponent,
-    DonutCardComponent,
-    DonutFormComponent,
-  ],
-  imports: [CommonModule, FormsModule, RouterModule.forChild(routes)],
-})
-export class AdminModule {}
+// @NgModule({
+//   declarations: [
+//     DonutListComponent,
+//     DonutSingleComponent,
+//     DonutCardComponent,
+//     DonutFormComponent,
+//   ],
+//   imports: [CommonModule, FormsModule, RouterModule.forChild(routes)],
+// })
+// export class AdminModule {}
