@@ -1,12 +1,12 @@
 {
   "donuts": [
     {
-      "id": "1",
       "name": "Just chocolate",
       "icon": "just-chocolate",
-      "price": 119,
+      "price": 169,
+      "promo": "new",
       "description": "For the pure chocolate",
-      "promo": "new"
+      "id": "1"
     },
     {
       "name": "Glazed fudge",
@@ -36,6 +36,14 @@
       "price": 119,
       "description": "Delicious lucious lemon.",
       "id": "5"
+    },
+    {
+      "name": "Vanilla sundae",
+      "icon": "vanilla-sundae",
+      "price": 100,
+      "promo": "new",
+      "description": "new",
+      "id": "_BalEnN"
     }
   ]
 }
