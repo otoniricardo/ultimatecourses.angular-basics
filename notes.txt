@@ -253,3 +253,5 @@ commit: [Standalone Components]: The Idea Behind Standalone Angular
     @schematics/angular:component;
 
 commit: [Standalone Components]: Bootstrap a Standalone Component instead of NgModule
+
+commit: [Standalone Components]: Providing a Route Config via importProvidersFr
