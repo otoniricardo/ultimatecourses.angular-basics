@@ -246,3 +246,8 @@ commit: [Routing and Navigation]: Pass Custom Data to Routed Components
 
 commit: [Routing and Navigation]: Programmatic Navigation with Router.navigate()
     - 
+
+commit: [Standalone Components]: The Idea Behind Standalone Angular
+    - was introduced in angular 14;
+    - npx ng g c --standalone testing, --standalone flag can be set in angular.json
+    @schematics/angular:component;
