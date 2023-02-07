@@ -255,3 +255,5 @@ commit: [Standalone Components]: The Idea Behind Standalone Angular
 commit: [Standalone Components]: Bootstrap a Standalone Component instead of NgModule
 
 commit: [Standalone Components]: Providing a Route Config via importProvidersFr
+
+commit: [Standalone Components]: Import NgModules into Standalone Component
