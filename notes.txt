@@ -239,3 +239,7 @@ commit: [Routing and Navigation]: Declarative Navigation with routerLink Directi
 
 commit: [Routing and Navigation]: Dynamic Route Params and ActivatedRoute
     - 
+
+commit: [Routing and Navigation]: Pass Custom Data to Routed Components
+    - typescript recomends data['isEdit'] instead of data.isEdit when data is
+    any;

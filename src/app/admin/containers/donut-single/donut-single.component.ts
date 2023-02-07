@@ -9,6 +9,7 @@ import { DonutService } from '../../services/donut.service';
     <div>
       <app-donut-form
         [donut]="donut"
+        [isEdit]="isEdit"
         (create)="onCreate($event)"
         (update)="onUpdate($event)"
         (delete)="onDelete($event)"
@@ -19,6 +20,7 @@ import { DonutService } from '../../services/donut.service';
 })
 export class DonutSingleComponent implements OnInit {
   donut?: Donut;
+  isEdit!: boolean;
 
   constructor(
     private route: ActivatedRoute,
@@ -31,6 +33,8 @@ export class DonutSingleComponent implements OnInit {
     this.donutService
       .readOne(id)
       .subscribe((donut: Donut) => (this.donut = donut));
+
+    this.isEdit = this.route.snapshot.data['isEdit'];
   }
 
   onCreate(donut: Donut) {

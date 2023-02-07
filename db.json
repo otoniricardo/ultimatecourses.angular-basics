@@ -17,11 +17,11 @@
       "id": "2"
     },
     {
-      "id": "3",
       "name": "Caramel swirl",
       "icon": "caramel-swirl",
       "price": 129,
-      "description": "Chocolate drizzled with caramel"
+      "description": "Chocolate drizzled with caramel.",
+      "id": "3"
     },
     {
       "id": "4",
@@ -34,7 +34,6 @@
       "name": "Zesty lemon",
       "icon": "zesty-lemon",
       "price": 119,
-      "promo": "new",
       "description": "Delicious lucious lemon.",
       "id": "5"
     }
