@@ -263,3 +263,5 @@ commit: [Standalone Components]: Lazy-Load Component-Less Route Configs
 commit: [Standalone Components]: Providing Standalone Directives, Components
 
 commit: [Standalone Components]: Code Split and Lazy-Load at the Component Le
+
+commit: [Standalone Components]: Scoped or Component-Level Providers and “p
