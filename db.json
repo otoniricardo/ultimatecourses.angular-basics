@@ -3,7 +3,7 @@
     {
       "name": "Just chocolate",
       "icon": "just-chocolate",
-      "price": 169,
+      "price": 179,
       "promo": "new",
       "description": "For the pure chocolate",
       "id": "1"
@@ -11,9 +11,9 @@
     {
       "name": "Glazed fudge",
       "icon": "glazed-fudge",
-      "price": 129,
+      "price": 199,
       "promo": "limited",
-      "description": "Sticky perfection",
+      "description": "Sticky perfection.",
       "id": "2"
     },
     {

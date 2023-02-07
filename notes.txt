@@ -259,3 +259,5 @@ commit: [Standalone Components]: Providing a Route Config via importProvidersFr
 commit: [Standalone Components]: Import NgModules into Standalone Component
 
 commit: [Standalone Components]: Lazy-Load Component-Less Route Configs
+
+commit: [Standalone Components]: Providing Standalone Directives, Components 
