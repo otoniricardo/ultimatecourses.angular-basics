@@ -251,3 +251,5 @@ commit: [Standalone Components]: The Idea Behind Standalone Angular
     - was introduced in angular 14;
     - npx ng g c --standalone testing, --standalone flag can be set in angular.json
     @schematics/angular:component;
+
+commit: [Standalone Components]: Bootstrap a Standalone Component instead of NgModule
