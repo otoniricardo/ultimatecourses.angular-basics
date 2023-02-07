@@ -1,22 +1,26 @@
 import { Routes } from '@angular/router';
 
-//containers
-import { DonutListComponent } from './containers/donut-list/donut-list.component';
-import { DonutSingleComponent } from './containers/donut-single/donut-single.component';
+const loadDonutSingleComponent = () =>
+  import('../admin/containers/donut-single/donut-single.component').then(
+    ({ DonutSingleComponent }) => DonutSingleComponent
+  );
 
 export const AdminRoutes: Routes = [
   {
     path: 'donuts',
-    component: DonutListComponent,
+    loadComponent: () =>
+      import('../admin/containers/donut-list/donut-list.component').then(
+        ({ DonutListComponent }) => DonutListComponent
+      ),
   },
   {
     path: 'donuts/new',
-    component: DonutSingleComponent,
+    loadComponent: loadDonutSingleComponent,
     data: { isEdit: false },
   },
   {
     path: 'donuts/:id',
-    component: DonutSingleComponent,
+    loadComponent: loadDonutSingleComponent,
     data: { isEdit: true },
   },
   {
